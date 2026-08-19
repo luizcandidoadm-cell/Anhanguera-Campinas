@@ -11,56 +11,59 @@
     <div class="container">
         <!-- Cabeçalho -->
         <header class="header">
-            <h1>Sua Instituição</h1>
+            <h1>Anhanguera Jundiaí</h1>
             <p>Mapa Sala EAD</p>
         </header>
 
-        <!-- Filtros e Busca -->
-        <div class="controls">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Buscar por curso, sala ou mediador...">
-            </div>
+        <!-- Bloco de Filtros -->
+        <div class="search-card">
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar por curso, sala ou mediador...">
+                </div>
 
-            <div class="filter-box">
-                <select id="filterDia">
-                    <option value="">Todos os dias</option>
-                    <option value="SEGUNDA-FEIRA">Segunda-feira</option>
-                    <option value="TERÇA-FEIRA">Terça-feira</option>
-                    <option value="QUARTA-FEIRA">Quarta-feira</option>
-                    <option value="QUINTA-FEIRA">Quinta-feira</option>
-                    <option value="SEXTA-FEIRA">Sexta-feira</option>
-                </select>
+                <div class="filter-box">
+                    <select id="filterDia">
+                        <option value="">Todos os dias</option>
+                        <option value="SEGUNDA-FEIRA">Segunda-feira</option>
+                        <option value="TERÇA-FEIRA">Terça-feira</option>
+                        <option value="QUARTA-FEIRA">Quarta-feira</option>
+                        <option value="QUINTA-FEIRA">Quinta-feira</option>
+                        <option value="SEXTA-FEIRA">Sexta-feira</option>
+                    </select>
 
-                <select id="filterTurno">
-                    <option value="">Todos os turnos</option>
-                    <option value="Manhã">Manhã</option>
-                    <option value="Noite">Noite</option>
-                </select>
+                    <select id="filterTurno">
+                        <option value="">Todos os turnos</option>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                </div>
             </div>
         </div>
 
         <!-- Tabela -->
-        <div class="table-responsive">
-            <table id="salasTable">
-                <thead>
-                    <tr>
-                        <th>Curso</th>
-                        <th>Dia</th>
-                        <th>Turno</th>
-                        <th>Série</th>
-                        <th>Sala</th>
-                        <th>Mediador</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <!-- Preenchido via JavaScript -->
-                </tbody>
-            </table>
+        <div class="table-container">
+            <div class="table-responsive">
+                <table id="salasTable">
+                    <thead>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Dia</th>
+                            <th>Turno</th>
+                            <th>Série</th>
+                            <th>Sala</th>
+                            <th>Mediador</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Preenchido via JavaScript -->
+                    </tbody>
+                </table>
 
-            <!-- Mensagem caso nada seja encontrado -->
-            <div id="noResults" class="no-results hidden">
-                <p><strong>Nenhuma sala encontrada.</strong></p>
-                <p>Tente ajustar os filtros ou os termos de busca.</p>
+                <div id="noResults" class="no-results hidden">
+                    <p><strong>Nenhuma sala encontrada.</strong></p>
+                    <p style="margin-top: 6px; font-size: 0.9rem;">Tente ajustar os filtros ou os termos de busca.</p>
+                </div>
             </div>
         </div>
     </div>
